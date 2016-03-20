@@ -148,8 +148,8 @@ For some reason it doesn't always register that the mouse is released, not sure 
 		var deltaX,
 			deltaY;
 		// Get the distance
-		deltaX = newX - prevX;
-		deltaY = newY - prevY;
+		deltaX = newX - prevX - 50;
+		deltaY = newY - prevY - 110;
 
 		// Get old X position of rectangle
 		// var oldRectPositionX = window.getComputedStyle(draggedObject,null).getPropertyValue("top");
