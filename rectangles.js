@@ -36,7 +36,7 @@ For some reason it doesn't always register that the mouse is released, not sure 
 			var rectangle = document.createElement("div");
 			var parent = document.getElementById("rectanglearea");
 			rectangle.className = "rectangle";
-			rectangle.addEventListener("mousedown",mouseDown);
+			rectangle.addEventListener("mousedown", mouseDown);
 			// Since I want the rectangle area to listen add, add it to the parent
 			parent.appendChild(rectangle);
 		}
@@ -106,7 +106,7 @@ For some reason it doesn't always register that the mouse is released, not sure 
 			dragging = false,
 			draggedObject;
 
-	function mouseDown(){
+	function mouseDown(event){
 		this.style.zindex = "10";
 		
 		// Make it go away
@@ -125,7 +125,7 @@ For some reason it doesn't always register that the mouse is released, not sure 
 		// this.parentNode.addEventListener("mouseup", mouseUp);
 	}
 	
-	function mouseUp(){
+	function mouseUp(event){
 		if(dragging === true){
 			// release the mouse
 			console.log("Mouse has been freed!");
